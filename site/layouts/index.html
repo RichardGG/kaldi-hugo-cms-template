@@ -1,15 +1,182 @@
-{{ partial "head" . }}
 
-{{ partial "nav" . }}
+<!doctype html>
+<html>
+<head>
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/home/jumbotron.jpg" "title" "Great coffee with a conscience" "subtitle" "Support sustainable farming while enjoying a cup") }}
+{{ partial "meta" . }}
 
-{{ partial "short-text" (dict "heading" "Why Kaldi?" "text" "Kaldi is the coffee store for everyone who believes that great coffee shouldn't just taste good, it should do good too. We source all of our beans directly from small scale sustainable farmers and make sure part of the profits are reinvested in their communities.")}}
+</head>
+<body>
 
-{{ partial "2-up" (dict "heading" "What we offer" "description" "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone." "svg1" "img/illustrations/coffee.svg" "text1" "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability." "svg2" "/img/illustrations/coffee-gear.svg" "text2" "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop." "buttonText" "See all products" "buttonLink" "/products"  ) }}
 
-{{ partial "text-and-image" (dict "heading" "Our values" "text" "Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature." "buttonText" "Read more" "buttonLink" "/values") }}
+	<div class="page">
+		<header>
+			<div class="logo">
+				<img src="logo.svg">
+				<div class="logo-text">
+					<div class="logo-title">Steamoven</div>
+					<div class="logo-desc">Graphic Design &amp; Illustration</div>
+				</div>
+			</div>
+			<div class="social">
+				<div class="">
+					Find me elsewhere!
+				</div>
+				<ul class="list-reset">
+					<li>
+						<a href="https://facebook.com" target="_blank">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com" target="_blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com" target="_blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com" target="_blank">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
 
-{{ partial "blog" . }}
+		<nav id="navigation">
+			<span>Quick Jump</span>
+			<ul class="list-reset">
+				<li>
+					<a class="slide-shortcut" data-link-to="0">About</a>
+				</li>
+				<li>
+					<a class="slide-shortcut projects-shortcut" data-link-to="1">Projects</a>
+					<ul class="list-reset projects-shortcuts">
+						<li>
+							<a class="slide-shortcut project-0" data-link-to="1">Print</a>
+						</li>
+						<li>
+							<a class="slide-shortcut project-1" data-link-to="3">Vector</a>
+						</li>
+						<li>
+							<a class="slide-shortcut project-2" data-link-to="5">Other</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a class="slide-shortcut" data-link-to="7">Contact</a>
+				</li>
+			</ul>
+		</nav>
 
-{{ partial "footer" . }}
+		<div class="slides">
+			<div class="slide about-slide">
+				<div class="image" style="background:red"></div>
+			</div>
+			<div class="slide project-slide" data-category="0">
+				<div class="image" style="background:red"></div>
+			</div>
+			<div class="slide project-slide" data-category="0">
+				<div class="image" style="background:orange"></div>
+			</div>
+			<div class="slide project-slide" data-category="1">
+				<div class="image" style="background:yellow"></div>
+			</div>
+			<div class="slide project-slide" data-category="1">
+				<div class="image" style="background:green"></div>
+			</div>
+			<div class="slide project-slide" data-category="2">
+				<div class="image" style="background:blue"></div>
+			</div>
+			<div class="slide project-slide" data-category="2">
+				<div class="image" style="background:purple"></div>
+			</div>
+			<div class="slide contact-slide">
+				<div class="image" style="background:red"></div>
+			</div>
+		</div>
+
+		<div class="content-holder">
+			<div class="content" id="content-0">
+				<h1 class="project-title">About</h1>
+				<div class="content-detail">
+					<div class="gallery">
+						<div class="row">
+							<div class="row-content">
+								<div class="column" style="width:66.66%;flex-grow:0;">
+									<a class="image" href="rip.png" style="background:orange">
+										<img src="rip.png">
+									</a>
+								</div>
+								<div class="column">
+									<a class="image" href="rip.png" style="background:green"></a>
+									<a class="image" href="rip.png" style="background:red"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-text">
+						<h3>Bla Bla Bla</h3>
+						<p>
+							Apple banana carrot dragonfruit egg fruit guava ham. Ink Japan knowledge longest moonshot noodle, open parts questions? Resting super tube universe vacation west xray. Yesterday zebra...
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content-1">
+				<h1 class="project-title">Marina Magazine</h1>
+			</div>
+			<div class="content" id="content-2">
+				<h1 class="project-title">Poster</h1>
+			</div>
+			<div class="content" id="content-3">
+				<h1 class="project-title">Alpacas</h1>
+			</div>
+			<div class="content" id="content-4">
+				<h1 class="project-title">Pokemon</h1>
+				<div class="content-detail">
+					<div class="gallery">
+						<div class="row">
+							<div class="row-content">
+								<div class="column" style="width:66.66%;flex-grow:0;">
+									<a class="image" href="rip.png" style="background:orange"></a>
+								</div>
+								<div class="column">
+									<a class="image" href="rip.png" style="background:green"></a>
+									<a class="image" href="rip.png" style="background:red"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-text">
+						<h3>Bla Bla Bla</h3>
+						<p>
+							Apple banana carrot dragonfruit egg fruit guava ham. Ink Japan knowledge longest moonshot noodle, open parts questions? Resting super tube universe vacation west xray. Yesterday zebra...
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content-5">
+				<h1 class="project-title">Zeeps</h1>
+			</div>
+			<div class="content" id="content-6">
+				<h1 class="project-title">Tea Time</h1>
+			</div>
+			<div class="content" id="content-7">
+				<h1 class="project-title">Contact</h1>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+
+</body>
+
+</html>
