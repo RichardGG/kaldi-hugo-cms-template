@@ -20,6 +20,28 @@ collections: [ # A list of collections the CMS should be able to edit
         ]
       },
       {
+        file: "site/content/projectCategories.md",
+        label: "Project Categories",
+        name: "projectCategories",
+        fields: [
+          {
+            label: Categories, 
+            name: categories, 
+            widget: list, 
+            fields: [
+              {
+                label: Category, 
+                name: category, 
+                widget: relation,
+                collection: categories,
+                searchFields: [title],
+                valueField: title
+              }
+            ]
+          }
+        ]
+      },
+      {
         file: "site/content/contact.md",
         label: "Contact",
         name: "contact",
@@ -36,7 +58,21 @@ collections: [ # A list of collections the CMS should be able to edit
     create: true, # Allow users to create new documents in this collection
     fields: [
       {label: Title, name: title, widget: string},
-      {label: Order, name: order, widget: number}
+      {
+        label: Projects, 
+        name: projects, 
+        widget: list, 
+        fields: [
+          {
+            label: Project, 
+            name: project, 
+            widget: relation,
+            collection: projects,
+            searchFields: [title],
+            valueField: title
+          }
+        ]
+      }
     ]
   },
   { 
@@ -46,14 +82,6 @@ collections: [ # A list of collections the CMS should be able to edit
     create: true, # Allow users to create new documents in this collection
     fields: [
       {label: Title, name: title, widget: string},
-      {
-        label: Category, 
-        name: category, 
-        widget: relation,
-        collection: categories,
-        searchFields: [title],
-        valueField: title
-      },
       {label: Image, name: image, widget: image},
       {label: Description, name: description, widget: markdown},
       {
