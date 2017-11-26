@@ -1,175 +1,28 @@
-
 <!doctype html>
 <html>
 <head>
-
-{{ partial "meta" . }}
-
+    {{ partial "meta" . }}
 </head>
 <body>
 
-
 	<div class="page">
-		<header>
-			<div class="logo">
-				<img src="logo.svg">
-				<div class="logo-text">
-					<div class="logo-title">Steamoven</div>
-					<div class="logo-desc">Graphic Design &amp; Illustration</div>
-				</div>
-			</div>
-			<div class="social">
-				<div class="">
-					Find me elsewhere!
-				</div>
-				<ul class="list-reset">
-					<li>
-						<a href="https://facebook.com" target="_blank">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://instagram.com" target="_blank">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://linkedin.com" target="_blank">
-							<i class="fa fa-linkedin" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com" target="_blank">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</header>
 
+		<header>
+            {{ partial "header" . }}
+        </header>
+        
 		<nav id="navigation">
-			<span>Quick Jump</span>
-			<ul class="list-reset">
-				<li>
-					<a class="slide-shortcut" data-link-to="0">About</a>
-				</li>
-				<li>
-					<a class="slide-shortcut projects-shortcut" data-link-to="1">Projects</a>
-					<ul class="list-reset projects-shortcuts">
-						<li>
-							<a class="slide-shortcut project-0" data-link-to="1">Print</a>
-						</li>
-						<li>
-							<a class="slide-shortcut project-1" data-link-to="3">Vector</a>
-						</li>
-						<li>
-							<a class="slide-shortcut project-2" data-link-to="5">Other</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a class="slide-shortcut" data-link-to="7">Contact</a>
-				</li>
-			</ul>
+			{{ partial "nav" . }}
 		</nav>
 
 		<div class="slides">
-			<div class="slide about-slide">
-				<div class="image" style="background:red"></div>
-			</div>
-			<div class="slide project-slide" data-category="0">
-				<div class="image" style="background:red"></div>
-			</div>
-			<div class="slide project-slide" data-category="0">
-				<div class="image" style="background:orange"></div>
-			</div>
-			<div class="slide project-slide" data-category="1">
-				<div class="image" style="background:yellow"></div>
-			</div>
-			<div class="slide project-slide" data-category="1">
-				<div class="image" style="background:green"></div>
-			</div>
-			<div class="slide project-slide" data-category="2">
-				<div class="image" style="background:blue"></div>
-			</div>
-			<div class="slide project-slide" data-category="2">
-				<div class="image" style="background:purple"></div>
-			</div>
-			<div class="slide contact-slide">
-				<div class="image" style="background:red"></div>
-			</div>
+			{{ partial "slides" . }}
 		</div>
 
 		<div class="content-holder">
-			<div class="content" id="content-0">
-				<h1 class="project-title">About</h1>
-				<div class="content-detail">
-					<div class="gallery">
-						<div class="row">
-							<div class="row-content">
-								<div class="column" style="width:66.66%;flex-grow:0;">
-									<a class="image" href="rip.png" style="background:orange">
-										<img src="rip.png">
-									</a>
-								</div>
-								<div class="column">
-									<a class="image" href="rip.png" style="background:green"></a>
-									<a class="image" href="rip.png" style="background:red"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="content-text">
-						<h3>Bla Bla Bla</h3>
-						<p>
-							Apple banana carrot dragonfruit egg fruit guava ham. Ink Japan knowledge longest moonshot noodle, open parts questions? Resting super tube universe vacation west xray. Yesterday zebra...
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="content" id="content-1">
-				<h1 class="project-title">Marina Magazine</h1>
-			</div>
-			<div class="content" id="content-2">
-				<h1 class="project-title">Poster</h1>
-			</div>
-			<div class="content" id="content-3">
-				<h1 class="project-title">Alpacas</h1>
-			</div>
-			<div class="content" id="content-4">
-				<h1 class="project-title">Pokemon</h1>
-				<div class="content-detail">
-					<div class="gallery">
-						<div class="row">
-							<div class="row-content">
-								<div class="column" style="width:66.66%;flex-grow:0;">
-									<a class="image" href="rip.png" style="background:orange"></a>
-								</div>
-								<div class="column">
-									<a class="image" href="rip.png" style="background:green"></a>
-									<a class="image" href="rip.png" style="background:red"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="content-text">
-						<h3>Bla Bla Bla</h3>
-						<p>
-							Apple banana carrot dragonfruit egg fruit guava ham. Ink Japan knowledge longest moonshot noodle, open parts questions? Resting super tube universe vacation west xray. Yesterday zebra...
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="content" id="content-5">
-				<h1 class="project-title">Zeeps</h1>
-			</div>
-			<div class="content" id="content-6">
-				<h1 class="project-title">Tea Time</h1>
-			</div>
-			<div class="content" id="content-7">
-				<h1 class="project-title">Contact</h1>
-			</div>
-		</div>
+            {{ partial "content" . }}
+        </div>
+        
 	</div>
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -178,5 +31,4 @@
 	<script type="text/javascript" src="js/code.js"></script>
 
 </body>
-
 </html>
