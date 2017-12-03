@@ -1,10 +1,11 @@
 ---
 title: Vector
-image: /img/z1.jpg
+image: /img/WebArt__Flareon.png
 description: This is an example
 images:
   - title: Example Image
-    image: /img/z2.jpg
+    image: /img/WebArt__Flareon.png
 ---
+
 
 
