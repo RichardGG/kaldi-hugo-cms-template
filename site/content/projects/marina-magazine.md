@@ -1,6 +1,6 @@
 ---
 title: Marina Magazine
-image: /img/hero.jpg
+image: /img/marina magazine edit.jpg
 description: "# Project 1\n\nThis is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example"
 images:
   - title: Example Image
@@ -11,7 +11,9 @@ images:
     image: /img/z3.jpg
   - title: Example Image
     image: /img/z4.jpg
+  - image: /img/Quarterdeck Awning.jpg
 ---
+
 
 
 
