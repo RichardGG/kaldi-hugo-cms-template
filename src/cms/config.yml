@@ -12,7 +12,7 @@ collections: [ # A list of collections the CMS should be able to edit
     label: "Special",
     files: [
       {
-        file: "site/content/about.md",
+        file: "site/content/special/about.md",
         label: "About",
         name: "about",
         fields: [
@@ -31,7 +31,7 @@ collections: [ # A list of collections the CMS should be able to edit
         ]
       },
       {
-        file: "site/content/projectCategories.md",
+        file: "site/content/special/projectCategories.md",
         label: "Project Categories",
         name: "projectCategories",
         fields: [
@@ -53,7 +53,7 @@ collections: [ # A list of collections the CMS should be able to edit
         ]
       },
       {
-        file: "site/content/contact.md",
+        file: "site/content/special/contact.md",
         label: "Contact",
         name: "contact",
         fields: [
