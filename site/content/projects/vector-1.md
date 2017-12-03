@@ -1,5 +1,5 @@
 ---
-title: Vector
+title: Vector Art
 image: /img/WebArt__Flareon.png
 description: This is an example
 images:
@@ -9,6 +9,7 @@ images:
   - image: /img/WebArt__Jolteon.png
   - image: /img/WebArt__Raichu.png
 ---
+
 
 
 
