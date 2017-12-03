@@ -1,7 +1,8 @@
 ---
-title: Vector
 order: '2'
+title: Vector
 projects:
-  - project: Vector 1
+  - project: Vector Art
 ---
+
 
