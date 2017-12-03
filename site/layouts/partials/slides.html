@@ -1,6 +1,6 @@
 {{ range where $.Site.Pages ".Title" "About" }}
     <div class="slide about-slide">
-        <div class="image" style="background:url({{ .Params.image }})"></div>
+        <div class="image" style="background-image:url({{ .Params.image }})"></div>
     </div>
 {{ end }}
 
@@ -11,7 +11,7 @@
             {{ range .Params.projects  }}
                 {{ range where $.Site.Pages ".Title" .project }}
                     <div class="slide project-slide" data-category="{{ $.Scratch.Get "categoryCount" }}">
-                        <div class="image" style="background:url({{ .Params.image }})"></div>
+                        <div class="image" style="background-image:url({{ .Params.image }})"></div>
                     </div>
                 {{ end }}
             {{ end }}
@@ -23,6 +23,6 @@
 
 {{ range where $.Site.Pages ".Title" "Contact" }}
     <div class="slide contact-slide">
-        <div class="image" style="background:url({{ .Params.image }})"></div>
+        <div class="image" style="background-image:url({{ .Params.image }})"></div>
     </div>
 {{ end }}
