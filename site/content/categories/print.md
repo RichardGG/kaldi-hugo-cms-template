@@ -1,7 +1,8 @@
 ---
 title: Print
 projects:
-  - project: Marina Magazine
+  - project: Gold Coast City Marina
 ---
+
 
 

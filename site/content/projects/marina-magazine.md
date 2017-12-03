@@ -1,5 +1,5 @@
 ---
-title: Marina Magazine
+title: Gold Coast City Marina
 image: /img/marina magazine edit.jpg
 description: "## Project 1\n\nThis is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example\_This is an example"
 images:
@@ -13,6 +13,7 @@ images:
     image: /img/marina z4.jpg
   - image: /img/Quarterdeck Awning.jpg
 ---
+
 
 
 
