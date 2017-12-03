@@ -442,7 +442,7 @@ h1.project-title{
 	width: 100%;
 	.row{
 		width: 100%;
-		padding-bottom: 50%;
+		padding-bottom: 70%;
 		position: relative;
 		.row-content{
 			display: flex;
@@ -456,6 +456,10 @@ h1.project-title{
 				flex-direction: column;
 				height: 100%;
 				flex-grow: 1;
+				&:only-child {
+					width: 100% !important;
+					
+				}
 				.image{
 					flex-grow: 1;
 					width: 100%;
@@ -468,7 +472,9 @@ h1.project-title{
 						top: 50%;
 						transform: translate(-50%,-50%);
 						height: 100%;
-						width: auto;
+						width: 100%;
+						object-fit: cover;
+
 					}
 				}
 			}

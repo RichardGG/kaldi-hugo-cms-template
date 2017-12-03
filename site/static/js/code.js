@@ -63,6 +63,11 @@ function showSlide(slide, slideNo){
 
 $(document).ready(function() {
 	$('.gallery').each(function(){
+
+		$(this).find('.image').each(function(){
+			
+		});
+
 		$(this).magnificPopup({
 			delegate: '.image',
 			type:'image',
@@ -74,7 +79,8 @@ $(document).ready(function() {
 				enabled: true,
 			}
 		});
-	})
+	});
+
 });
 
 
