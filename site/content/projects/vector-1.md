@@ -6,8 +6,15 @@ images:
   - title: Example Image
     image: /img/WebArt__Flareon.png
   - image: /img/WebArt__Eevee.png
-  - image: /img/JOLTEON POSTER.png
+  - image: /img/WebArt__Jolteon.png
+  - image: /img/WebArt__Raichu.png
+  - image: /img/z1.jpg
+  - image: /img/z2.jpg
+  - image: /img/z3.jpg
+  - image: /img/z5.jpg
+  - image: /img/z6.jpg
 ---
+
 
 
 
