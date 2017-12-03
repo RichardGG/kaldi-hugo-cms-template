@@ -1,0 +1,30 @@
+<span>Quick Jump</span>
+<ul class="list-reset">
+    <li>
+        <a class="slide-shortcut" data-link-to="0">About</a>
+    </li>
+    <li>
+        <a class="slide-shortcut projects-shortcut" data-link-to="1">Projects</a>
+        <ul class="list-reset projects-shortcuts">
+
+            {{ $.Scratch.Set "categoryCount" 0 }}
+            {{ $.Scratch.Set "projectCount" 1 }}
+            {{ range where $.Site.Pages ".Title" "Categories" }}
+				{{ range $catindex, .Params.projectCategories  }}
+                    {{ range where $.Site.Pages ".Title" .category }}
+                        <li>
+                            <a class="slide-shortcut project-{{ $.Scratch.Get "categoryCount" }}" data-link-to="{{ $.Scratch.Get "projectCount" }}">{{.Title}}</a>
+                        </li>
+                        {{ $.Scratch.Add "categoryCount" 1 }}
+                        {{ range .Params.projects  }}
+                            {{ $.Scratch.Add "projectCount" 1 }}
+                        {{ end }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+        </ul>
+    </li>
+    <li>
+        <a class="slide-shortcut" data-link-to="{{ $.Scratch.Get "projectCount" }}">Contact</a>
+    </li>
+</ul>
