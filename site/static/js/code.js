@@ -62,14 +62,19 @@ function showSlide(slide, slideNo){
 }
 
 $(document).ready(function() {
-  $('.gallery .image').magnificPopup({
-  	type:'image',
-  	mainClass: 'mfp-with-zoom',
-  	zoom: {
-  		enabled: true,
-  		
-  	}
-  });
+	$('.gallery').each(function(){
+		$(this).magnificPopup({
+			delegate: '.image',
+			type:'image',
+			mainClass: 'mfp-with-zoom',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+			}
+		});
+	})
 });
 
 

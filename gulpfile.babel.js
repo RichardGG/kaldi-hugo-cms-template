@@ -12,6 +12,7 @@ import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
 import replace from "gulp-replace";
 import cssnano from "cssnano";
+var sass = require('gulp-sass');
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -38,16 +39,23 @@ gulp.task("cms", () => {
 gulp.task("build", ["css", "js", "hugo", "cms"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
-gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([
-      cssImport({from: "./src/css/main.css"}),
-      cssnext(),
-      cssnano(),
-    ]))
-    .pipe(gulp.dest("./dist/css"))
+// gulp.task("css", () => (
+//   gulp.src("./src/css/*.css")
+//     .pipe(postcss([
+//       cssImport({from: "./src/css/main.css"}),
+//       cssnext(),
+//       cssnano(),
+//     ]))
+//     .pipe(gulp.dest("./dist/css"))
+//     .pipe(browserSync.stream())
+// ));
+
+gulp.task('css', function () {
+  return gulp.src('./src/css/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./dist/css/'))
     .pipe(browserSync.stream())
-));
+});
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -86,7 +94,7 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
     }
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/css/**/*.scss", ["css"]);
   gulp.watch("./src/cms/*", ["cms"]);
   gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);

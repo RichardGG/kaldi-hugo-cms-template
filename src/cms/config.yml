@@ -16,7 +16,18 @@ collections: [ # A list of collections the CMS should be able to edit
         label: "About",
         name: "about",
         fields: [
-          {label: Title, name: title, widget: string}
+          {label: Title, name: title, widget: string},
+          {label: Image, name: image, widget: image},
+          {label: Description, name: description, widget: markdown},
+          {
+            label: Images, 
+            name: images, 
+            widget: list, 
+            fields: [
+              {label: Title, name: title, widget: string},
+              {label: Image, name: image, widget: image}
+            ]
+          }
         ]
       },
       {
@@ -46,7 +57,9 @@ collections: [ # A list of collections the CMS should be able to edit
         label: "Contact",
         name: "contact",
         fields: [
-          {label: Title, name: title, widget: string}
+          {label: Title, name: title, widget: string},
+          {label: Image, name: image, widget: image},
+          {label: Description, name: description, widget: markdown}
         ]
       }
     ]
