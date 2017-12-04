@@ -492,10 +492,18 @@ header{
 		max-width: 1700px;
 		padding: 0 40px;
 		margin: 0 auto;
+		@media (max-width: 767px) {
+			flex-direction: column-reverse;
+			padding: 0;
+		}
 		.content-text{
-			min-width: 400px;
-			width: 350px;
-			padding: 0 20px;
+			
+			width: 100%;
+			@media (min-width: 768px){
+				width: 350px;
+				min-width: 400px;
+				padding: 0 20px;
+			}
 			flex-shrink: 0;
 			p{
 				background-color: #999;
@@ -525,7 +533,7 @@ h2.project-title{
 	z-index: 10;
 	position: relative;
 	text-transform: uppercase;
-	margin: -40px 0 60px;
+	margin: -4git0px 0 60px;
 }
 
 .masonry {
