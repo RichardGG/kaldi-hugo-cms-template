@@ -1,7 +1,7 @@
 
 {{ range where $.Site.Pages ".Title" "About"  }}
     <div class="content" id="content-0">
-        <h1 class="project-title">{{.Title}}</h1>
+        <h2 class="project-title">{{.Title}}</h2>
         <div class="content-detail">
             <div class="gallery">
                 {{ $.Scratch.Set "imageCount" 0 }}
@@ -52,7 +52,7 @@
             {{ range .Params.projects  }}
                 {{ range where $.Site.Pages ".Title" .project }}
                     <div class="content" id="content-{{ $.Scratch.Get "projectCount" }}">
-                        <h1 class="project-title">{{ .Title }}</h1>
+                        <h2 class="project-title">{{ .Title }}</h2>
                         <div class="content-detail">
                             <div class="gallery">
                                 {{ $.Scratch.Set "imageCount" 0 }}
@@ -100,7 +100,7 @@
 {{ end }}
 
 <div class="content" id="content-{{ $.Scratch.Get "projectCount" }}">
-    <h1 class="project-title">Contact</h1>
+    <h2 class="project-title">Contact</h2>
     <div style="display: flex; justify-content: center; align-items: center;">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLdTBV-ljaDpf1jkzuE8NQ5Azh4YYhPVnTOWV6ejV9TWmHbw/viewform?embedded=true" width="760" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>

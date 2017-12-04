@@ -58,7 +58,9 @@ function showSlide(slide, slideNo){
 	}
 
 	// show page content
-	$('#content-' + slideNo).addClass('active');
+	setTimeout(function(){
+		$('#content-' + slideNo).addClass('active');
+	}, 0);
 }
 
 $(document).ready(function() {
@@ -79,6 +81,16 @@ $(document).ready(function() {
 				enabled: true,
 			}
 		});
+	});
+
+
+	$(window).scroll(function(){
+		console.log($(document).scrollTop());
+		if ($(document).scrollTop() > 10 ){
+			$('header').addClass('scrolled');
+		}else{
+			$('header').removeClass('scrolled');
+		}
 	});
 
 });
