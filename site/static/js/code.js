@@ -85,12 +85,12 @@ $(document).ready(function() {
 
 
 	$(window).scroll(function(){
-		// console.log($(document).scrollTop());
-		// if ($(document).scrollTop() > 10 ){
-		// 	$('header').addClass('scrolled');
-		// }else{
-		// 	$('header').removeClass('scrolled');
-		// }
+		//console.log($(document).scrollTop());
+		if ($(document).scrollTop() > 10 ){
+			$('header').addClass('scrolled');
+		}else{
+			$('header').removeClass('scrolled');
+		}
 	});
 
 });
