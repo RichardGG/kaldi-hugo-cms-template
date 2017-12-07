@@ -1,9 +1,11 @@
 ---
-title: Sage Apartments
+title: SAGE Apartments
 image: /img/SAGE ICON.jpg
 description: This is a test
 images:
-  - title: test
+  - title: ''
     image: /img/SAGE WORK.jpg
+  - image: /img/SAGE WORK2.jpg
 ---
+
 
