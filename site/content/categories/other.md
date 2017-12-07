@@ -1,7 +1,8 @@
 ---
-title: Other
 order: '3'
+title: Other
 projects:
-  - project: Other 1
+  - project: Tea Time
 ---
+
 
