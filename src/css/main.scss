@@ -352,7 +352,8 @@ header{
 
 
 .slides{
-	margin: 20px 0;
+	margin: 20px auto;
+	max-width: 1400px;
 	@media (max-width: 767px){
 		margin: 0;
 		width: 100%;
