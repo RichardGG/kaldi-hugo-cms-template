@@ -10,7 +10,10 @@ images:
   - title: Example Image
     image: /img/z1.jpg
   - image: /img/z2.png
+  - image: /img/Tea Time Stuff.jpg
+  - image: /img/Tea Time Stuff3.jpg
 ---
+
 
 
 
