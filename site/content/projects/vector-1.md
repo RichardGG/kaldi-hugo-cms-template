@@ -1,6 +1,6 @@
 ---
 title: Vector Art
-image: /img/WebArt__Flareon.png
+image: /img/VECTOR ICON (1).png
 description: >-
   My love for vector illustration, and Adobe Illustrator, began with my use of
   the software during my first year of university. I have worked hard to learn
@@ -20,6 +20,7 @@ images:
   - image: /img/WebArt__Bat.png
   - image: /img/WebArt__KittyCat.png
 ---
+
 
 
 
