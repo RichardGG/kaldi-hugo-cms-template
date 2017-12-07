@@ -1,6 +1,6 @@
 ---
 title: Tea Time
-image: /img/hero.jpg
+image: /img/TEA TIME COVER.jpg
 description: >-
   Tea Time is a University project that I completed in 2014. It stands to be one
   of the more creative outcomes I've produced and it's also what got me
@@ -11,6 +11,7 @@ images:
     image: /img/z1.jpg
   - image: /img/z2.png
 ---
+
 
 
 
