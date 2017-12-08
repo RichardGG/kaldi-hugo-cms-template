@@ -105,6 +105,23 @@ collections: [ # A list of collections the CMS should be able to edit
           {label: Title, name: title, widget: string},
           {label: Image, name: image, widget: image}
         ]
+      },
+      {
+        label: Image Layout (Rows),
+        name: imageLayout,
+        widget: list,
+        fields: [
+          {label: Column, name: column, widget: list,
+            fields: [
+              {label: Row, name: row, widget: list,
+                fields: [
+                  {label: Image, name: image, widget: image},
+                  {label: Full Size, name: fullSize, widget: boolean}
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
