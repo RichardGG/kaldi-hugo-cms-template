@@ -19,7 +19,15 @@ images:
   - title: ''
     image: /img/SAGE WORK.jpg
   - image: /img/SAGE WORK2.jpg
+imageLayout:
+  - column:
+      - row:
+          - image: /img/SAGE WORK.jpg
+  - column:
+      - row:
+          - image: /img/SAGE WORK2.jpg
 ---
+
 
 
 
