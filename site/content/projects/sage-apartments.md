@@ -22,11 +22,13 @@ images:
 imageLayout:
   - column:
       - row:
-          - image: /img/SAGE WORK.jpg
+          - fullSize: true
+            image: /img/SAGE WORK.jpg
   - column:
       - row:
           - image: /img/SAGE WORK2.jpg
 ---
+
 
 
 
