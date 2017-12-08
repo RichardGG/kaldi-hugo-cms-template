@@ -647,35 +647,72 @@ h2.project-title{
 	}
 }
 
+.content-detail {
+	max-width: 100%;
+}
+
 .gallery{
-	width: 100%;
-	.row{
-		width: 100%;
-		padding-bottom: 70%;
-		position: relative;
-		.row-content{
-			display: flex;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			.column{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				flex-grow: 1;
-				&:only-child {
-					width: 100% !important;
+	// width: 100%;
+	// .row{
+	// 	width: 100%;
+	// 	padding-bottom: 70%;
+	// 	position: relative;
+	// 	.row-content{
+	// 		display: flex;
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 0;
+	// 		right: 0;
+	// 		bottom: 0;
+	// 		.column{
+	// 			display: flex;
+	// 			flex-direction: column;
+	// 			height: 100%;
+	// 			flex-grow: 1;
+	// 			&:only-child {
+	// 				width: 100% !important;
 					
+	// 			}
+	// 			.image{
+	// 				flex-grow: 1;
+	// 				width: 100%;
+	// 				cursor: zoom-in;
+	// 				position: relative;
+	// 				overflow: hidden;
+	// 				img{
+	// 					position: absolute;
+	// 					left: 50%;
+	// 					top: 50%;
+	// 					transform: translate(-50%,-50%);
+	// 					height: 100%;
+	// 					width: 100%;
+	// 					object-fit: cover;
+
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	
+	width: 100%;
+	.row {
+		display: flex;
+		.column {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			.image {
+				font-size: 0;
+				img {
+					width: 100%;
 				}
-				.image{
-					flex-grow: 1;
+				&:not(.full-size) {
 					width: 100%;
 					cursor: zoom-in;
 					position: relative;
 					overflow: hidden;
-					img{
+					padding-bottom: 50%;
+					img {
 						position: absolute;
 						left: 50%;
 						top: 50%;
@@ -683,7 +720,6 @@ h2.project-title{
 						height: 100%;
 						width: 100%;
 						object-fit: cover;
-
 					}
 				}
 			}
