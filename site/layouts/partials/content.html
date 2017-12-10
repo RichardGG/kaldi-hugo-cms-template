@@ -4,37 +4,21 @@
         <h2 class="project-title">{{.Title}}</h2>
         <div class="content-detail">
             <div class="gallery">
-                {{ $.Scratch.Set "imageCount" 0 }}
-                {{ $.Scratch.Set "openDiv" false }}
-                        <div class="junkrow">
-                            <div>
-                {{ range .Params.images }}
-                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 0 }}
-                            </div>
-                        </div>
+                {{ range .Params.imageLayout }}
+                    <div class="row-holder {{ if .height }}ratio-height{{ end }}" style="{{ if .height }}padding-bottom: {{.height}}%;{{ end }}">
                         <div class="row">
-                            <div class="row-content">
-                                <div class="column" style="width:66.66%;flex-grow:0;">
-                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                </div>
-                    {{ end }}
-                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 1 }}
-                                <div class="column">
-                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                        {{ $.Scratch.Set "openDiv" true }}
-                    {{ end }}
-                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 2 }}
-                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                </div>
-                        {{ $.Scratch.Set "openDiv" false }}
-                    {{ end }}
-                    {{ $.Scratch.Add "imageCount" 1 }}
-                {{ end }}
-                            {{ if $.Scratch.Get "openDiv" }}
-                                </div>
-                            {{ end }}
+                        {{ range .column }}
+                            <div class="column" style="{{ if .width }}width: {{.width}}%;{{ end }}">
+                                {{ range .row }}
+                                    <a class="image {{ if .fullSize }}full-size{{ end }}" href="{{ .image }}" style="{{ if .height }}height: {{.height}}%;{{ end }}">
+                                        <img src="{{ .image }}">
+                                    </a>
+                                {{ end }}
                             </div>
+                        {{ end }}
                         </div>
+                    </div>
+                {{ end }}
             </div>
             <div class="content-text">
                 {{ .Params.description | markdownify  }}
@@ -56,14 +40,18 @@
                     <div class="content-detail">
                         <div class="gallery">
                             {{ range .Params.imageLayout }}
-                                <div class="row">
-                                {{ range .column }}
-                                    <div class="column">
-                                        {{ range .row }}
-                                            <a class="image {{ if .fullSize }}full-size{{ end }}" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                        {{ end }}
+                                <div class="row-holder {{ if .height }}ratio-height{{ end }}" style="{{ if .height }}padding-bottom: {{.height}}%;{{ end }}">
+                                    <div class="row">
+                                    {{ range .column }}
+                                        <div class="column" style="{{ if .width }}width: {{.width}}%;{{ end }}">
+                                            {{ range .row }}
+                                                <a class="image {{ if .fullSize }}full-size{{ end }}" href="{{ .image }}" style="{{ if .height }}height: {{.height}}%;{{ end }}">
+                                                    <img src="{{ .image }}">
+                                                </a>
+                                            {{ end }}
+                                        </div>
+                                    {{ end }}
                                     </div>
-                                {{ end }}
                                 </div>
                             {{ end }}
                         </div>
@@ -79,65 +67,9 @@
 {{ end }}
 {{ end }}
 
-{{ $.Scratch.Set "categoryCount" 0 }}
-{{ $.Scratch.Set "projectCount" 1 }}
-{{ range where $.Site.Pages ".Title" "Categories"  }}
-    {{ range $catindex, .Params.projectCategories  }}
-        {{ range where $.Site.Pages ".Title" .category }}
-            {{ $.Scratch.Add "categoryCount" 1 }}
-            {{ range .Params.projects  }}
-                {{ range where $.Site.Pages ".Title" .project }}
-                    <div class="content" id="content-{{ $.Scratch.Get "projectCount" }}">
-                        <h2 class="project-title">{{ .Title }}</h2>
-                        <div class="content-detail">
-                            <div class="gallery">
-                                {{ $.Scratch.Set "imageCount" 0 }}
-                                {{ $.Scratch.Set "openDiv" false }}
-                                        <div class="junkrow">
-                                            <div>
-                                {{ range .Params.images }}
-                                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 0 }}
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="row-content">
-                                                <div class="column" style="width:66.66%;flex-grow:0;">
-                                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                                </div>
-                                    {{ end }}
-                                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 1 }}
-                                                <div class="column">
-                                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                        {{ $.Scratch.Set "openDiv" true }}
-                                    {{ end }}
-                                    {{ if eq (mod ($.Scratch.Get "imageCount") 3) 2 }}
-                                                    <a class="image" href="{{ .image }}"><img src="{{ .image }}"></a>
-                                                </div>
-                                        {{ $.Scratch.Set "openDiv" false }}
-                                    {{ end }}
-                                    {{ $.Scratch.Add "imageCount" 1 }}
-                                {{ end }}
-                                            {{ if $.Scratch.Get "openDiv" }}
-                                                </div>
-                                            {{ end }}
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="content-text">
-                                {{ .Params.description | markdownify  }}
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
-                {{ $.Scratch.Add "projectCount" 1 }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-
 <div class="content" id="content-{{ $.Scratch.Get "projectCount" }}">
     <h2 class="project-title">Contact</h2>
     <div style="display: flex; justify-content: center; align-items: center;">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLdTBV-ljaDpf1jkzuE8NQ5Azh4YYhPVnTOWV6ejV9TWmHbw/viewform?embedded=true" width="760" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLdTBV-ljaDpf1jkzuE8NQ5Azh4YYhPVnTOWV6ejV9TWmHbw/viewform?embedded=true" width="760" height="1400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
 </div>

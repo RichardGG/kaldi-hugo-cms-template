@@ -15,26 +15,15 @@ description: >-
   own card to the DL flyer which the client can take home with them. It includes
   all of the important information concerning Sage Apartments and showcases a
   relaxing and modern atmosphere through the chosen photographs.
-images:
-  - title: ''
-    image: /img/SAGE WORK.jpg
-  - image: /img/SAGE WORK2.jpg
 imageLayout:
   - column:
       - row:
           - fullSize: true
             image: /img/SAGE WORK.jpg
-        width: '20'
-      - row:
-          - fullSize: true
-            height: '20'
-            image: /img/SAGE WORK.jpg
-          - fullSize: true
-            image: /img/SAGE WORK.jpg
-    height: ''
   - column:
       - row:
-          - image: /img/SAGE WORK2.jpg
+          - fullSize: true
+            image: /img/SAGE WORK2.jpg
 ---
 
 

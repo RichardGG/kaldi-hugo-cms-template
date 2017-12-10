@@ -17,16 +17,27 @@ description: >-
   administration building at the marina. My first creation was the logo, which
   is still in use, and is located on the storefront, print media, social media
   and apron/uniforms.
-images:
-  - title: Example Image
-    image: /img/marina z1.jpg
-  - title: Example Image
-    image: /img/marina z2.jpg
-  - title: Example Image
-    image: /img/marina z3.jpg
-  - title: Example Image
-    image: /img/marina z4.jpg
-  - image: /img/Quarterdeck Awning.jpg
+imageLayout:
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/marina z1.jpg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/marina z2.jpg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/marina z3.jpg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/marina z4.jpg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/Quarterdeck Awning.jpg
 ---
 
 

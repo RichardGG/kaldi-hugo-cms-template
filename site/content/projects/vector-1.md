@@ -10,15 +10,35 @@ description: >-
   Although I mainly make these illustrations in my spare time, I like to utilise
   vectors within my layout designs as I feel they add another dimension to the
   overall project and can be quite effective where implemented well.
-images:
-  - title: Example Image
-    image: /img/WebArt__Flareon.png
-  - image: /img/WebArt__Eevee.png
-  - image: /img/Raichu (1).png
-  - image: /img/Inner Demons Art C01.png
-  - image: /img/WebArt__Jolteon.png
-  - image: /img/WebArt__Bat.png
-  - image: /img/WebArt__KittyCat.png
+imageLayout:
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/WebArt__Flareon.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/WebArt__Eevee.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/Raichu (1).png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/Inner Demons Art C01.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/WebArt__Jolteon.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/WebArt__Bat.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/WebArt__KittyCat.png
 ---
 
 

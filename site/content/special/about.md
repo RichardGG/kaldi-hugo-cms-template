@@ -5,6 +5,11 @@ description: "## WELCOME\n\nHi, I’m Natalia!\n\nI’m a graphic designer based
 images:
   - title: Example Image
     image: /img/NEGATIVE SPACE.png
+imageLayout:
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/NEGATIVE SPACE.png
 ---
 
 
