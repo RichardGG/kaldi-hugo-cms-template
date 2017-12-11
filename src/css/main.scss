@@ -203,6 +203,7 @@ header{
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 40px;
+	margin-top: 120px;
 	> span{
 		text-transform: uppercase;
 		font-family: 'Rubik', sans-serif;
@@ -547,6 +548,23 @@ header{
 				text-transform: uppercase;
 				color: white;
 			}
+
+			&.full-width {
+				width: 100%;
+				margin: 0;
+				background: none;
+				padding: 0;
+				.content-text-holder {
+					background-image: url(/img/randorepeat2.png);
+					max-width: calc(80% + 80px);
+					margin: 0 auto;
+					.content-text-content {
+						max-width: 620px;
+						margin: 0 auto;
+						padding: 20px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -575,8 +593,8 @@ h2.project-title{
 	width: 80%;
 	max-width: 1200px;
 	margin: auto;
-	margin-top: 130px;
-	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 
 
 	@media (max-width: 767px ) {

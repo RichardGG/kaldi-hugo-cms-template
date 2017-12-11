@@ -3,8 +3,10 @@
     <div class="content" id="content-0">
         <h2 class="project-title">{{.Title}}</h2>
         <div class="content-detail">
+            {{ $.Scratch.Set "rowCount" 0 }}
             <div class="gallery">
                 {{ range .Params.imageLayout }}
+                    {{ $.Scratch.Add "rowCount" 1 }}
                     <div class="row-holder {{ if .height }}ratio-height{{ end }}" style="{{ if .height }}padding-bottom: {{.height}}%;{{ end }}">
                         <div class="row">
                         {{ range .column }}
@@ -20,10 +22,68 @@
                     </div>
                 {{ end }}
             </div>
-            <div class="content-text">
-                {{ .Params.description | markdownify  }}
+            <div class="content-text {{ if le ($.Scratch.Get "rowCount") 0 }}full-width{{ end }}">
+                <div class="content-text-holder">
+                    <div class="content-text-content">
+                        {{ .Params.description | markdownify  }}
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="masonry">
+                <div class="masonry-height">
+                    <div class="masonry-content">
+                        <div class="row">
+                            <div class="column one-sixth">
+                                <div class="row">
+                                    <div class="item" style="background-image:url(/img/logo.svg); background-size: contain; background-repeat: no-repeat;">
+    
+                                    </div>
+                                </div>
+                                <div class="row semi-semi-tall">
+                                    <div class="item" style="background-image: url(/img/rando1.jpg);">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column one-sixth">
+                                <div class="item" style="background-image: url(/img/WebArt__Jolteon.png)">
+    
+                                </div>
+                            </div>
+                            <div class="column one-third">
+                                <div class="item" style="background-image: url(/img/WebArt__KittyCat.png)">
+    
+                                </div>
+                            </div>
+                            <div class="column one-third">
+                                <div class="row">
+                                    <div class="column one-whole">
+                                        <div class="row semi-tall">
+                                            <div class="column one-half">
+                                                <div class="item" >
+                                                        
+                                                </div>
+                                            </div>
+                                            <div class="column one-half">
+                                                <div class="item" style="background-image: url(/img/WebArt__Raichu.png)">
+                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="column one-whole">
+                                                <div class="item" style="background-image: url(img/logotext.png); background-size: contain; background-repeat: no-repeat;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 {{ end }}
 
