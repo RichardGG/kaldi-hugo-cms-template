@@ -1,5 +1,5 @@
 ---
-title: Other
+title: Other Print
 image: /img/OTHER ICON.png
 description: >-
   My love for vector illustration, and Adobe Illustrator, began with my use of
