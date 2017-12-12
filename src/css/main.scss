@@ -13,7 +13,7 @@ body{
 	overflow-x: hidden;
 
 	//background: linear-gradient(90deg,#6DC6F8,#C696F7);
-	background: #9BB0F5;
+	background: #5f4d87;
 	// &:after{
 	// 	content: '';
 	// 	position: absolute;
@@ -556,6 +556,7 @@ header{
 				padding: 0;
 				.content-text-holder {
 					background-image: url(/img/randorepeat2.png);
+					background-size: contain;
 					max-width: calc(80% + 80px);
 					margin: 0 auto;
 					.content-text-content {
