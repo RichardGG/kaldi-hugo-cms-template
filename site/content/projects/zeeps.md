@@ -6,9 +6,13 @@ description: >-
 
 
   * Come up with an initial idea for a product, whether it be physical or digital, that can be marketed and sold.
+
   * Create a brand statement that outlines the purpose of the business, demographic and goal of the product/business. 
+
   * Design the branding (logo, website, any promotional items, etc.)
+
   * Seek a manufacturer/service to produce the product professionally. 
+  
   * Market a campaign that ties the product in with an existing charity to help raise funds and spread awareness of said charity.
 
 
