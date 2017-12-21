@@ -39,7 +39,16 @@ imageLayout:
       - row:
           - fullSize: true
             image: /img/WebArt__KittyCat.png
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/guild1.jpg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/guild2.jpg
 ---
+
 
 
 
