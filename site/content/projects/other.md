@@ -24,10 +24,6 @@ imageLayout:
   - column:
       - row:
           - fullSize: true
-            image: /img/DIAlogues poster.jpg
-  - column:
-      - row:
-          - fullSize: true
             image: /img/harrypottertriviaposter.png
   - column:
       - row:
@@ -37,7 +33,12 @@ imageLayout:
       - row:
           - fullSize: true
             image: /img/harry-potter-wall-poster.jpeg
+  - column:
+      - row:
+          - fullSize: true
+            image: /img/DIAlogues poster.jpg
 ---
+
 
 
 
