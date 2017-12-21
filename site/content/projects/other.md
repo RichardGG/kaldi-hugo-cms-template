@@ -18,15 +18,8 @@ imageLayout:
   - column:
       - row:
           - fullSize: true
-            image: /img/guild1.jpg
-  - column:
-      - row:
-          - fullSize: true
-            image: /img/guild2.jpg
-  - column:
-      - row:
-          - fullSize: true
             image: /img/harry-potter-wall-poster.jpeg
 ---
+
 
 
