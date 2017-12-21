@@ -7,8 +7,9 @@ description: >-
   an experienced marketing executive, was to create a 70\+ page, annual Marina
   magazine that showcases articles related to boating, fishing and general
   marina life. From scratch, we completed the project in two months and had
-  thousands of copies printed for distribution locally and globally. [View it on
-  issuu](https://issuu.com/gold-coast-city-marina/docs/marina_vol_31_for_issuu_3).
+  thousands of copies printed for distribution locally and globally. [Click here
+  to view the full magazine on
+  Issuu](https://issuu.com/gold-coast-city-marina/docs/marina_vol_31_for_issuu_3).
 
 
   The magazine wasn’t my only task, as I was given other projects during this
@@ -44,6 +45,7 @@ imageLayout:
           - fullSize: true
             image: /img/Quarterdeck Awning.jpg
 ---
+
 
 
 
