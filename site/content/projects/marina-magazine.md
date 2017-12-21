@@ -4,11 +4,10 @@ image: /img/marina magazine edit.jpg
 description: >-
   My work relationship with Gold Coast City Marina & Shipyard began as an
   internship six months before I was due to graduate. My major task, alongside
-  an experienced marketing executive, was to create a [70\+ page, annual Marina
-  magazine](https://issuu.com/gold-coast-city-marina/docs/marina_vol_31_for_issuu_3)
-  that showcases articles related to boating, fishing and general marina life.
-  From scratch, we completed the project in two months and had thousands of
-  copies printed for distribution locally and globally. [View it on
+  an experienced marketing executive, was to create a 70\+ page, annual Marina
+  magazine that showcases articles related to boating, fishing and general
+  marina life. From scratch, we completed the project in two months and had
+  thousands of copies printed for distribution locally and globally. [View it on
   issuu](https://issuu.com/gold-coast-city-marina/docs/marina_vol_31_for_issuu_3).
 
 
@@ -45,6 +44,7 @@ imageLayout:
           - fullSize: true
             image: /img/Quarterdeck Awning.jpg
 ---
+
 
 
 
