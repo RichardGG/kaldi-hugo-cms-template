@@ -1,15 +1,7 @@
 ---
 title: Other Print
 image: /img/OTHER ICON.png
-description: >-
-  My love for vector illustration, and Adobe Illustrator, began with my use of
-  the software during my first year of university. I have worked hard to learn
-  the ins and outs of the software since.
-
-
-  Although I mainly make these illustrations in my spare time, I like to utilise
-  vectors within my layout designs as I feel they add another dimension to the
-  overall project and can be quite effective where implemented well.
+description: "After my contract with Gold Coast City Marina has concluded, I took on a position at the Griffith University Student Guild graphic designer to help with their internal clubs’ design, as well as helping with some of their events. Pictured are the two trivia night event posters I created during my time with the student guild, which were distributed around campus and on their social media pages.\_\n\nDuring this time, I was also involved with the Design Institute of Australia (DIA) Queensland branch as a volunteer designer and committee member. I was asked to come up with a design for their 2016 DIAlogues event titled, ‘The Good, The Bad and The Ugly’ which was based around the good, bad and downright ugly side of design and architecture on the Gold Coast. My design showcases a spin on the title and includes a colour palette that represents the Gold Coast (sun, surf and sand). It was printed and distributed around the Gold Coast/Brisbane as a foldable poster/flyer. As the event was approaching, I made matching name tags to be distributed to the members and honoured guests that would be attending the event.\_"
 imageLayout:
   - column:
       - row:
@@ -32,3 +24,4 @@ imageLayout:
           - fullSize: true
             image: /img/guild2.jpg
 ---
+
