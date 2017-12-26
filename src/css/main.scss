@@ -3,7 +3,7 @@
 }
 body{
 	background: green;//rgba(244,168,168,0.5);
-	font-family: 'Trirong', serif;
+	font-family: 'Open Sans', serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: #ffffff;
@@ -529,6 +529,7 @@ header{
 			flex-shrink: 0;
 			color: white;
 			padding: 20px;
+			font-weight: 600;
 
 
 			a {
@@ -540,17 +541,14 @@ header{
 			-webkit-font-smoothing: unset;
 			//padding: 30px;
 			margin-top: 0;
-			font-size: 13px;
+			font-size: 14px;
+			line-height: 25px;
 			letter-spacing: 0.6px;
 
-			p{
-				//margin-top: 20px;
-			}
 			h2 {
-				margin: 0;
-				//margin-top: 20px;
 				text-transform: uppercase;
 				color: white;
+				margin: 40px 0 50px;
 			}
 
 			&.full-width {
@@ -604,7 +602,7 @@ h2.project-title{
 
 	@media (max-width: 767px ) {
 		width: 100%;
-		margin-top: 100px;
+		//margin-top: 100px;
 		margin-bottom: 0;
 	}
 	.masonry-height {
