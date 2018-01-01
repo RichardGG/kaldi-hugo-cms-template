@@ -24,11 +24,13 @@ imageLayout:
   - column:
       - row:
           - fullSize: true
-            image: /img/harrypottertriviaposter.png
+            image: /img/olympictriviaposter.png
   - column:
       - row:
           - fullSize: true
-            image: /img/olympictriviaposter.png
+            image: /img/harrypottertriviaposter.png
+      - row:
+          - {}
   - column:
       - row:
           - fullSize: true
@@ -38,6 +40,7 @@ imageLayout:
           - fullSize: true
             image: /img/DIAlogues poster.jpg
 ---
+
 
 
 
