@@ -1,4 +1,11 @@
 
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+
+if (isChrome) {
+	$('.banner').addClass('animate')
+}
+
 $('.slides').on('init', function (slick) {
 	showSlide(slick,0)
 });
