@@ -9,6 +9,7 @@ $('.slides').slick({
     slidesToShow: 3,
 	infinite: false,
 	speed: 100,
+	autoplay: true,
     responsive: [
     	{
     		breakpoint: 768,
@@ -84,10 +85,17 @@ $(document).ready(function() {
 	});
 
 
+	$('.down-arrow').click(function() {
+		$('html, body').animate({
+			scrollTop: $(".down-arrow").offset().top - 50
+		}, 500);
+	});
+
 	$(window).scroll(function(){
 		//console.log($(document).scrollTop());
 		if ($(document).scrollTop() > 10 ){
 			$('header').addClass('scrolled');
+			$('.slides').slick('slickPause');
 		}else{
 			$('header').removeClass('scrolled');
 		}

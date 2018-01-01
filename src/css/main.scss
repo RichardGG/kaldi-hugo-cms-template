@@ -498,6 +498,7 @@ header{
 	margin: auto;
 	position: relative;
 	cursor: pointer;
+	z-index: 10;
 
 	animation: arrow-bounce 2s infinite alternate;
 
