@@ -85,19 +85,24 @@ $(document).ready(function() {
 	});
 
 
-	$('.down-arrow').click(function() {
+	$('.down-arrow, .scroll-shortcut').click(function() {
 		$('html, body').animate({
-			scrollTop: $(".down-arrow").offset().top - 50
+			scrollTop: $(".down-arrow").offset().top
 		}, 500);
 	});
 
 	$(window).scroll(function(){
 		//console.log($(document).scrollTop());
 		if ($(document).scrollTop() > 10 ){
-			$('header').addClass('scrolled');
-			$('.slides').slick('slickPause');
+			//$('header').addClass('scrolled');
+			//$('.slides').slick('slickPause');
 		}else{
-			$('header').removeClass('scrolled');
+			//$('header').removeClass('scrolled');
+		}
+
+
+		if ($(document).scrollTop() > $(window).height() ){
+			$('.slides').slick('slickPause');
 		}
 	});
 
