@@ -483,6 +483,44 @@ header{
 	}
 }
 
+@keyframes arrow-bounce {
+	from {
+		transform: translateY(105px);
+	}
+	to {
+		transform: translateY(95px);
+	}
+}
+
+.down-arrow {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	position: relative;
+	cursor: pointer;
+
+	animation: arrow-bounce 2s infinite alternate;
+
+	&::after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 0px;
+		height: 0px;
+		border: 0 solid transparent;
+		border-width: 20px 20px;
+		border-top-color: white;
+		transition: opacity 0.3s;
+		opacity: 0.7;
+	}
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
  
 .content-holder{
 	position: relative;
@@ -530,7 +568,6 @@ header{
 			color: white;
 			padding: 20px;
 			font-weight: 600;
-
 
 			a {
 				color: white;
