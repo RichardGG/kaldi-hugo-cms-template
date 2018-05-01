@@ -3,7 +3,7 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
 
 
 if (isChrome) {
-	$('.banner').addClass('animate')
+	//$('.banner').addClass('animate')
 }
 
 $('.slides').on('init', function (slick) {
