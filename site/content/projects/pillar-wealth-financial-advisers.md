@@ -5,9 +5,14 @@ description: |+
   ![null](/img/Original Brief Sheet C012.png)
 
 imageLayout:
-  - {}
-  - {}
+  - column:
+      - row:
+          - image: /img/Original Brief Sheet C01.png
+  - column:
+      - row:
+          - {}
   - {}
 ---
+
 
 
