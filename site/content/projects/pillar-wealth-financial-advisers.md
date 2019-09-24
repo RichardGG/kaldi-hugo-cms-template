@@ -1,10 +1,13 @@
 ---
 title: Pillar Wealth Financial Advisers
 image: /img/PW ICON.png
-description: gtrwagetnsymrhjttehrgh
+description: |+
+  ![null](/img/Original Brief Sheet C012.png)
+
 imageLayout:
   - {}
   - {}
   - {}
 ---
+
 
